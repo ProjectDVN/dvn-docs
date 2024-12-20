@@ -1,17 +1,11 @@
-Welcome to Lumache's documentation!
+Welcome to Project DVN's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+**Project DVN** is a powerful, user-friendly and flexible free open-source visual novel engine written in the D programming language. It's designed to help creators craft immersive, interactive narrative experiences. Whether you're a solo storyteller, an indie developer, or a studio, Project DVN provides the tools and flexibility needed to bring your stories to life. No advanced technical skills required. Start your journey today!
 
 .. note::
 
-   This project is under active development.
+   This project and its documentation is under active development.
 
 Contents
 --------
