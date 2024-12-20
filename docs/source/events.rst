@@ -286,4 +286,4 @@ The above code makes the layout look like this:
    Event preview result
 
 For a full list of modules and functions that can be used check out:
-https://github.com/ProjectDVN/dvn/wiki/8.-Modules-And-Functions
+https://dvn-docs.readthedocs.io/en/latest/modules-and-functions.html
