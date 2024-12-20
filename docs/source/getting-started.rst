@@ -40,7 +40,7 @@ and wish to modify any code OR you want to run it on another platform
 than Windows.**
 
 For events you can use in your code etc. please see:
-https://github.com/ProjectDVN/dvn?tab=readme-ov-file#events
+https://dvn-docs.readthedocs.io/en/latest/events.html
 
 1. Change titles
 ----------------
