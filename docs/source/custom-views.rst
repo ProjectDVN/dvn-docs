@@ -92,7 +92,7 @@ Useful functions for custom views:
    void displayScene(string scene);
 
 For other modules and useful functions see:
-https://github.com/ProjectDVN/dvn/wiki/8.-Modules-And-Functions
+https://dvn-docs.readthedocs.io/en/latest/modules-and-functions.html
 
 Example View
 ------------
