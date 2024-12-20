@@ -19,7 +19,7 @@ You may skip downloading the D compiler and dub if you don’t wish to
 modify any code and only wish to script your visual novel.
 
 In that case skip **Building and running** and go straight to
-https://github.com/ProjectDVN/dvn/wiki/Creating-your-first-visual-novel#1-change-titles
+https://dvn-docs.readthedocs.io/en/latest/getting-started.html#change-titles
 
 Building (Compiling) (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
