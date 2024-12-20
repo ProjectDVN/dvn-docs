@@ -10,9 +10,6 @@ Simply define a class like below:
 
    public final class Events : DvnEvents
    {
-       import zid;
-       import dvn.views.gameview;
-
        public:
        final:
        // override events here ...
@@ -26,9 +23,6 @@ Ex.
 
    public final class Events : DvnEvents
    {
-       import zid;
-       import dvn.views.gameview;
-
        public:
        final:
        override void renderGameViewCharacterName(SceneCharacterName characterName, Label label, Panel panel)
@@ -121,9 +115,6 @@ DVN.
 
    public final class Events : DvnEvents
    {
-       import zid;
-       import dvn.views.gameview;
-
        public:
        final:
        // override events here ...
