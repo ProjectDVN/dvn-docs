@@ -17,8 +17,7 @@ Changing Executable Icon
 This is a little more tricky than just changing the name of the
 executable.
 
-First you need to download `Resource
-Hacker `__
+First you need to download https://www.angusj.com/resourcehacker/
 
 You must also have an icon ready already ex. a 128x128 .ico file.
 
