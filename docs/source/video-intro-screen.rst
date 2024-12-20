@@ -2,7 +2,7 @@ Video Intro Screen
 ==================
 
 First you must have video frames added to a folder. See
-https://github.com/ProjectDVN/dvn/wiki/12.-Adding-Video for more
+https://dvn-docs.readthedocs.io/en/latest/adding-video.html for more
 information.
 
 Next thing just open your settings.json and add the following
@@ -21,7 +21,7 @@ contains the video frames and *NameOfMusic* is a given entry of music in
 the music.json file.
 
 To add music see:
-https://github.com/ProjectDVN/dvn/wiki/4.-Adding-Music-And-Sound-Effects
+https://dvn-docs.readthedocs.io/en/latest/adding-music-and-sound-effects.html
 
 After adding that setting then a video will be displayed before the main
 menu is shown.
