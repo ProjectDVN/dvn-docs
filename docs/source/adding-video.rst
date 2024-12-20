@@ -6,7 +6,7 @@ videos in that every frame from a video can be extracted and played
 back.
 
 Basically extract all frames from a video using something like
-`FFmpeg `__ then place them in a folder ex.
+https://www.ffmpeg.org/ then place them in a folder ex.
 “data/game/videos/myvideo” where each file is named something like
 “1.png” “2.png” etc. in the order you want them played.
 
