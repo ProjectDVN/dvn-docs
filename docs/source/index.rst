@@ -13,3 +13,16 @@ Contents
 .. toctree::
 
    getting-started
+   data-folders
+   adding-music-and-sound-effects
+   changing-fonts
+   scripting
+   events
+   modules-and-functions
+   changing-executable-name-and-icon
+   changing-company-name-version-info-copyright-etc
+   custom-views
+   adding-video
+   settings
+   video-intro-screen
+   customizing-the-main-menu
