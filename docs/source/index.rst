@@ -14,4 +14,4 @@ Contents
 
    usage
    api
-   test
+   getting-started
