@@ -105,6 +105,6 @@ path in characters.json**
 -------------------------
 
 See:
-https://github.com/ProjectDVN/dvn/wiki/9.-Changing-Executable-Name-And-Icon
+https://dvn-docs.readthedocs.io/en/latest/changing-executable-name-and-icon.html
 
 Your visual novel should now be running.
