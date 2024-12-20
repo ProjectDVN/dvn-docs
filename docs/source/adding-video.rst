@@ -25,6 +25,8 @@ finished playing. This is useful if you have an intro view before the
 main menu view and want the main menu displayed after the video
 finishes.
 
+*Note: Intro videos are now officially supported by Project DVN and doesn't require a custom view.*
+
 Example:
 
 .. code:: d
