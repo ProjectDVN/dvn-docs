@@ -24,13 +24,6 @@ These are all functions related to dvn directly.
    void displayLastSceneView();
    void displayScene(string scene);
 
-import zid;
------------
-
-These are all functions related to JSON, UI and/or SDL directly.
-
-.. code:: d
-
    public Application getApplication();
 
    int EXT_GetApplicationFps();
