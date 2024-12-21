@@ -91,3 +91,4 @@ These are all structs/classes related to UI.
    public final class Panel : Component {}
    public final class ScrollBar : Component {}
    public final class TextBox : Component {}
+   public final class Video : Component {}
