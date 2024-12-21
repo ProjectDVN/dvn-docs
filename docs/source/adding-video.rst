@@ -10,6 +10,12 @@ https://www.ffmpeg.org/ then place them in a folder ex.
 “data/game/videos/myvideo” where each file is named something like
 “1.png” “2.png” etc. in the order you want them played.
 
+The following cmd can be used with ffmpeg to extract all frames of a video named "video.mp4" into a folder named "frames".
+
+.. code::
+
+   ffmpeg -i "video.mp4" "frames/%%d.png"
+
 When that is finished you can create a video component in your view and
 display the video like below:
 
