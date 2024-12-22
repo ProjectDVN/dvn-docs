@@ -46,6 +46,33 @@ These are all the possible settings in settings.json.
    string videoLoadingMusic;
 
    bool disableLoadScreenMusic;
+   SettingsImage dialoguePanelImage;
+   SettingsImage namePanelImage;
+
+SaveFile:
+
+.. code:: d
+
+   string id;
+   string date;
+   string scene;
+   string background;
+   string music;
+   string[string] meta;
+
+SettingsImage:
+
+.. code:: d
+
+   string path;
+   SettingsSize size;
+
+SettingsSize:
+
+.. code:: d
+
+   int width;
+   int height;
 
 This is the default settings.json
 
