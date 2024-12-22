@@ -67,6 +67,8 @@ Full event function list:
        void playingMusic(string music) {}
        void playingSound(string sound) {}
 
+       void addClickSafeComponents(ref Component[] components) {}
+
        void renderGameViewOverplayBegin(Panel overlay) {}
        void renderGameViewBackground(Image background) {}
        void renderGameViewCharacter(SceneCharacter character, Image image) {}
@@ -74,7 +76,7 @@ Full event function list:
        void renderGameViewAnimation(SceneAnimation animation, Animation animationComponent) {}
        void renderGameViewLabel(SceneLabel label, Label labelComponent) {}
        void renderGameViewDialoguePanel(Panel panel) {}
-       void renderGameViewCharacterName(SceneCharacterName characterName, Label label, Panel panel) {}
+       void renderGameViewCharacterName(SceneCharacterName characterName, Label label, Panel panel, RawImage namePanelImage) {}
        void renderGameViewOption(Label option) {}
        void renderGameViewOptionsStart() {}
        void renderGameViewOptionsFinished() {}
@@ -93,6 +95,9 @@ Full event function list:
 
        // Main Menu View
        void renderMainMenuView(Window window, Label titleLabel, Label playLabel, Label loadLabel, Label settingsLabel, Label exitLabel) {}
+
+       // Video Loading View
+       void renderVideoLoadingView(Video video) {}
 
 Production Example
 ==================
