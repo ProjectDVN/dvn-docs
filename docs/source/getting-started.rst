@@ -101,8 +101,10 @@ path in characters.json**
 
 -  Open build/client/DVN.exe
 
-8. Changing Name And Icon
+8. Changing Name And Icon (Optional)
 -------------------------
+
+This step is optional and best if done when you release your product only.
 
 See:
 https://dvn-docs.readthedocs.io/en/latest/changing-executable-name-and-icon.html
