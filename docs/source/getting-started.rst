@@ -24,11 +24,11 @@ https://dvn-docs.readthedocs.io/en/latest/getting-started.html#change-titles
 Building (Compiling) (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For Windows you can simply run the **build.bat** script which will
-automatically build the project for you.
+For Windows you can simply run the **build_win_x86_64.bat** script which will
+automatically build the project for you for Windows x86_64.
 
 For other platforms such as Linux/macOS please compile using ex.
-``dub build -a=x86_64`` on the correct folder.
+``dub build -a=x86_64 --config=linux`` on the correct folder.
 
 You must modify dub.json to suit your platform, if you’re not on
 Windows.
