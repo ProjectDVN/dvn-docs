@@ -14,6 +14,9 @@ Requirements
 -  (Required) Download the empty visual novel project here:
    https://github.com/ProjectDVN/Empty/archive/refs/heads/main.zip
    (Source Code + Windows x86_64 build)
+-  (Optional) Download the kitchen sink visual novel project here:
+   https://github.com/ProjectDVN/KitchenSink/archive/refs/heads/main.zip
+   (Example Project + Source Code + Windows x86_64 build)
 
 You may skip downloading the D compiler and dub if you don’t wish to
 modify any code and only wish to script your visual novel.
