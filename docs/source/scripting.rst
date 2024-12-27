@@ -33,7 +33,7 @@ The following example is the “Hello World!” of Project DVN.
 .. code:: ini
 
    [main]
-   text:end=Hello World!
+   t=Hello World!
 
 Comments
 --------
