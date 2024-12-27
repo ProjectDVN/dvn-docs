@@ -214,7 +214,10 @@ Example:
 text=VALUE (t=VALUE)
 ~~~~~~~~~~~~~~~~
 
-Where *VALUE* is the text to display. This should be used with options only and when options as buttons is enabled.
+Where *VALUE* is the text to display.
+
+This has two purposes, showing text with options, when options are enabled as buttons OR
+to create a new scene entry copying every scene entry asset from last scene entry. This simplifies scene writing.
 
 Example:
 
@@ -223,6 +226,14 @@ Example:
    text=What do you want to do?
    option:park=Go to the park.
    option:train=Take the train.
+
+Example:
+
+.. code:: ini
+
+   text=First text of the scene.
+   text=Second text of the scene.
+   text:next-scene=Final text of the scene.
 
 text:SCENE=VALUE (t:SCENE=VALUE)
 ~~~~~~~~~~~~~~~~
