@@ -7,7 +7,7 @@ copyright = '2024, Project DVB'
 author = 'Project DVN'
 
 release = '1.0'
-version = '1.0.10'
+version = '1.0.14'
 
 # -- General configuration
 
