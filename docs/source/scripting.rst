@@ -176,6 +176,41 @@ Example:
 
 If not specified then this defaults to *bottomLeft*.
 
+charMovement=VALUE (cm=VALUE)
+~~~~~~~~~~~~~
+
+Where *VALUE* is a given movement value such as *top*, *right*, *bottom* or *left*.
+
+Example:
+
+.. code:: ini
+
+   charMovement=left
+
+charMovementSpeed=VALUE (cms=VALUE)
+~~~~~~~~~~~~~
+
+Where *VALUE* is a given integer for movement speed.
+
+This can be used to override the default speed of 42.
+
+Example:
+
+.. code:: ini
+
+   charMovementSpeed=50
+
+characterFadeIn (cf)
+~~~~~~~~~~~~~
+
+Fades in the current character.
+
+Example:
+
+.. code:: ini
+
+   characterFadeIn
+
 text=VALUE (t=VALUE)
 ~~~~~~~~~~~~~~~~
 
