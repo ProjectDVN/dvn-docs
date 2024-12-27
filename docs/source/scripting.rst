@@ -63,7 +63,7 @@ Properties that must be present every time are:
 
 -  text, option, act or view.
 
-background=VALUE
+background=VALUE (bg=VALUE)
 ~~~~~~~~~~~~~~~~
 
 Where *VALUE* is the name given for a background entry within the
@@ -75,7 +75,7 @@ Example:
 
    background=MyBackground
 
-music=VALUE
+music=VALUE (m=VALUE)
 ~~~~~~~~~~~
 
 Where *VALUE* is the name given for a music entry within the resource
@@ -87,7 +87,7 @@ Example:
 
    music=MyMusicTrack
 
-sound=VALUE
+sound=VALUE (s=VALUE)
 ~~~~~~~~~~~
 
 Where *VALUE* is the name given for a sound effect entry within the
@@ -99,7 +99,7 @@ Example:
 
    sound=MySoundEffect
 
-char=VALUE
+char=VALUE (c=VALUE)
 ~~~~~~~~~~
 
 Where *VALUE* is the name given for a character entry within the
@@ -113,7 +113,7 @@ Example:
 
    char=Sakura_Casual_Smile
 
-charName=VALUE
+charName=VALUE (n=VALUE)
 ~~~~~~~~~~~~~~
 
 Where *VALUE* is the name of the character speaking.
@@ -124,7 +124,7 @@ Example:
 
    charName=Sakura
 
-charNamePos=VALUE
+charNamePos=VALUE (np=VALUE)
 ~~~~~~~~~~~~~~~~~
 
 Where *VALUE* is a given value for the position of the name. Values
@@ -136,7 +136,7 @@ Example:
 
    charNamePos=left
 
-charColor=VALUE
+charColor=VALUE (cc=VALUE)
 ~~~~~~~~~~~~~~~
 
 Where *VALUE* is a given hex code ex. fff for white; this sets the
@@ -161,7 +161,7 @@ Example:
 
 If not specified then it defaults to *fff*
 
-charPos=VALUE
+charPos=VALUE (cp=VALUE)
 ~~~~~~~~~~~~~
 
 Where *VALUE* is a given value for the position of the character. Values
@@ -176,7 +176,20 @@ Example:
 
 If not specified then this defaults to *bottomLeft*.
 
-text:SCENE=VALUE
+text=VALUE (t=VALUE)
+~~~~~~~~~~~~~~~~
+
+Where *VALUE* is the text to display. This should be used with options only and when options as buttons is enabled.
+
+Example:
+
+.. code:: ini
+
+   text=What do you want to do?
+   option:park=Go to the park.
+   option:train=Take the train.
+
+text:SCENE=VALUE (t:SCENE=VALUE)
 ~~~~~~~~~~~~~~~~
 
 Where *SCENE* is the next scene entry and *VALUE* is the text to
@@ -189,7 +202,7 @@ Example:
 
    text:end=Hello Project DVN!
 
-animation:X,Y=VALUE
+animation:X,Y=VALUE (ani:X,Y=VALUE)
 ~~~~~~~~~~~~~~~~~~~
 
 Where *VALUE* is the source of the animation, *X* and *Y* are given x
@@ -202,7 +215,7 @@ Example:
 
    animation:150,150=MyAnimation
 
-animation:X,Y:REPEAT=VALUE
+animation:X,Y:REPEAT=VALUE (ani:X,Y:REPEAT=VALUE)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Where *REPEAT* is a boolean value of whether the animation repeats until
@@ -214,7 +227,7 @@ Example:
 
    animation:150,150:true=MyAnimation
 
-animation:X,Y:REPEAT:POSITION=VALUE
+animation:X,Y:REPEAT:POSITION=VALUE (ani:X,Y:REPEAT:POSITION=VALUE)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Where *POSITION* is a given position for the animation. Values supported
@@ -230,7 +243,7 @@ Example:
 When position is used then it’s generally adviced to have x and y as
 both 0.
 
-image:X,Y=VALUE
+image:X,Y=VALUE (i:X,Y=VALUE)
 ~~~~~~~~~~~~~~~
 
 Where *VALUE* is the source of the image, *X* and *Y* are given x and y
@@ -243,7 +256,7 @@ Example:
 
    image:150,150=MyImage
 
-image:X,Y:POSITION=VALUE
+image:X,Y:POSITION=VALUE (i:X,Y:POSITION=VALUE)
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Where *POSITION* is a given position for the image. Values supported are
@@ -259,7 +272,7 @@ Example:
 When position is used then it’s generally adviced to have x and y as
 both 0.
 
-option:SCENE=VALUE
+option:SCENE=VALUE (o:SCENE=VALUE)
 ~~~~~~~~~~~~~~~~~~
 
 Where *SCENE* is the next scene entry when the option is chosen and
@@ -282,7 +295,7 @@ Example:
    [no]
    text:end=Aw... How come?
 
-act:SCENE:CONTINUE_TEXT=VALUE
+act:SCENE:CONTINUE_TEXT=VALUE (a:SCENE:CONTINUE_TEXT=VALUE)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Where *SCENE* is the next scene entry, *CONTINUE_TEXT* is the text of
@@ -298,7 +311,7 @@ Example:
    [start]
    text:end=Welcome to my story!
 
-label:FONT_SIZE:X,Y:COLOR=VALUE
+label:FONT_SIZE:X,Y:COLOR=VALUE (l:FONT_SIZE:X,Y:COLOR=VALUE)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Where *FONT_SIZE* is the size of the font, *X* is the x position, *Y* is
