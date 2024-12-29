@@ -4,6 +4,10 @@ Getting Started
 To create your first visual novel with Project DVN simply follow this
 guide.
 
+We now have a launcher that you can use to create and manage your projects.
+
+See more here: 
+
 Requirements
 ------------
 
