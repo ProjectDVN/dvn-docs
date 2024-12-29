@@ -16,6 +16,7 @@ Contents
 .. toctree::
 
    getting-started
+   creating-your-first-visual-novel
    data-folders
    adding-music-and-sound-effects
    changing-fonts
