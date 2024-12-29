@@ -6,7 +6,9 @@ guide.
 
 We now have a launcher that you can use to create and manage your projects.
 
-See more here: 
+See more here: https://dvn-docs.readthedocs.io/en/latest/creating-your-first-visual-novel.html
+
+*We recommend you using the launcher and then referencing this guide afterwards.*
 
 Requirements
 ------------
