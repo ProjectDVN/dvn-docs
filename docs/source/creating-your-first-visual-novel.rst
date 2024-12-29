@@ -15,6 +15,12 @@ Requirements
 1. Getting started
 ----------------
 
+First you need to open the launcher.
+
+You can find the Windows x86_64 build in launcher-main/ProjectDVNLauncher/build/client called DVN.exe.
+
+For other platforms you must build the project, see https://dvn-docs.readthedocs.io/en/latest/getting-started.html for more information.
+
 First press the label that says "CREATE NEW PROJECT"
 
 .. figure:: https://i.imgur.com/y7cnZyo.png
