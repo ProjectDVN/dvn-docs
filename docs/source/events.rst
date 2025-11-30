@@ -41,63 +41,89 @@ Full event function list:
 
 .. code:: d
 
-       // Global
-       void loadingGame() {}
-       void loadedGame() {}
-       void savingGame(SaveFile[string] saves, SaveFile saveFile) {}
-       void loadingViews(Window window) {}
+    // Global
+    void preFrameLoop(Window[] windows) {}
+    void preRenderFrameLoop(Window[] windows) {}
+    void postRenderFrameLoop(Window[] windows) {}
+    void postFrameLoop(Window[] windows) {}
+    void preRenderContent(Window window) {}
+    void postRenderContent(Window window) {}
+    void loadingGame() {}
+    void loadedGame() {}
+    void savingGame(SaveFile[string] saves, SaveFile saveFile) {}
+    void loadingViews(Window window) {}
+    void onViewChange(View oldView, View newView, string oldViewName, string newViewName) {}
 
-       // Act View
-       void beginActView(string actName, string continueText, string background, string sceneName) {}
+    // Act View
+    void beginActView(string actName, string continueText, string background, string sceneName) {}
 
-       void renderActBackgroundImage(Image image) {}
-       void renderActTitleLabel(Label label) {}
-       void renderActBeginLabel(Label label) {}
+    void renderActBackgroundImage(Image image) {}
+    void renderActTitleLabel(Label label) {}
+    void renderActBeginLabel(Label label) {}
 
-       void endActView() {}
+    void endActView() {}
 
-       // Game View
-       void loadingGameScripts() {}
-       void loadedGameScripts(SceneEntry[string] scenes) {}
-       
-       void beginGameView(string sceneName, string loadBackground, string loadMusic) {}
-       
-       void beginHandleScene(SceneEntry scene, SceneEntry nextScene, bool isEnding) {}
-       
-       void playingMusic(string music) {}
-       void playingSound(string sound) {}
+    // Game View
+    void loadingGameScripts() {}
+    bool injectGameScript(SceneEntry scene, string key, string[] keyData, string value) { return true; }
+    void loadedGameScripts(SceneEntry[string] scenes) {}
+    
+    void beginGameView(string sceneName, string loadBackground, string loadMusic) {}
+    
+    void beginHandleScene(SceneEntry scene, SceneEntry nextScene, bool isEnding) {}
+    
+    void playingMusic(string music) {}
+    void playingSound(string sound) {}
 
-       void addClickSafeComponents(ref Component[] components) {}
+    void addClickSafeComponents(ref Component[] components) {}
 
-       void renderGameViewOverplayBegin(Panel overlay) {}
-       void renderGameViewBackground(Image background) {}
-       void renderGameViewCharacter(SceneCharacter character, Image image) {}
-       void renderGameViewImage(SceneImage image, Image imageComponent) {}
-       void renderGameViewAnimation(SceneAnimation animation, Animation animationComponent) {}
-       void renderGameViewLabel(SceneLabel label, Label labelComponent) {}
-       void renderGameViewDialoguePanel(Panel panel) {}
-       void renderGameViewCharacterName(SceneCharacterName characterName, Label label, Panel panel, RawImage namePanelImage) {}
-       void renderGameViewOption(Label option) {}
-       void renderGameViewOptionsStart() {}
-       void renderGameViewOptionsFinished() {}
-       void renderGameViewSaveButton(Button button) {}
-       void renderGameViewExitButton(Button button) {}
-       void renderGameViewSettingsButton(Button button) {}
-       void renderGameViewAutoButton(Button button) {}
-       void renderGameViewOverplayEnd(Panel overlay) {}
-       void renderGameViewTextFinished(Label textLabel) {}
+    // Background has been rendered, nothing else
+    void onEffectPre(SceneEffect effect) {}
+    // Every component has been or is being rendered (text is delayed so it might not be finished)
+    void onEffectPost(SceneEffect effect) {}
 
-       void endGameView() {}
+    void renderGameViewOverplayBegin(Panel overlay) {}
+    void renderGameViewBackground(Image background) {}
+    void renderGameViewCharacter(SceneCharacter character, Image image) {}
+    void renderGameViewImage(SceneImage image, Image imageComponent) {}
+    void renderGameViewVideo(SceneVideo video, Video videoComponent) {}
+    void renderGameViewAnimation(SceneAnimation animation, Animation animationComponent) {}
+    void renderGameViewLabel(SceneLabel label, Label labelComponent) {}
+    void renderGameViewDialoguePanelImage(RawImage image) {}
+    void renderGameViewDialoguePanel(Panel panel) {}
+    void renderGameViewCharacterName(SceneCharacterName characterName, Label label, Panel panel, RawImage namePanelImage) {}
+    void renderGameViewOption(Label option) {}
+    void renderGameViewOption(Button option) {}
+    void renderGameViewOptionsStart() {}
+    void renderGameViewOptionsFinished() {}
+    void renderGameViewSaveButton(Button button) {}
+    void renderGameViewExitButton(Button button) {}
+    void renderGameViewSettingsButton(Button button) {}
+    void renderGameViewAutoButton(Button button) {}
+    void renderGameViewQuickSaveButton(Button button) {}
+    void renderGameViewOverplayEnd(Panel overlay) {}
+    void renderGameViewTextStart(SceneEntry scene) {}
+    void renderGameViewTextFinished(Label textLabel) {}
 
-       // Settings View
-       void renderSettingsDropDown(DropDown dropdown) {}
-       void renderSettingsCheckBox(CheckBox checkbox) {}
+    bool onGameViewOptionClick(Label option) { return true; }
+    bool onGameViewOptionClick(Button option) { return true; }
 
-       // Main Menu View
-       void renderMainMenuView(Window window, Label titleLabel, Label playLabel, Label loadLabel, Label settingsLabel, Label exitLabel) {}
+    void endGameView() {}
 
-       // Video Loading View
-       void renderVideoLoadingView(Video video) {}
+    // Settings View
+    void renderSettingsDropDown(DropDown dropdown) {}
+    void renderSettingsCheckBox(CheckBox checkbox) {}
+
+    // Main Menu View
+    void renderMainMenuView(Window window, Component titleLabel, Component playLabel, Component loadLabel, Component historyLabel, Component settingsLabel, Component galleryLabel, Component exitLabel) {}
+
+    // Video Loading View
+    void renderVideoLoadingView(Video video) {}
+
+    // Load Game View
+    void renderLoadGameViewPrevLabel(Label label) {}
+    void renderLoadGameViewNextLabel(Label label) {}
+    void renderLoadGameViewLoadEntry(SaveFile saveFile, RawImage image, Label saveLabel) {}
 
 Production Example
 ==================
