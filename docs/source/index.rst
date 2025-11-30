@@ -30,3 +30,4 @@ Contents
    settings
    video-intro-screen
    customizing-the-main-menu
+   advanced-dev
