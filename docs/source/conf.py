@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'Project DVN'
-copyright = '2024, Project DVB'
+copyright = '2024, Project DVN'
 author = 'Project DVN'
 
 release = '1.0'
-version = '1.0.18'
+version = '1.0.31'
 
 # -- General configuration
 
