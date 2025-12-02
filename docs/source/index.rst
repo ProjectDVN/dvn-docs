@@ -31,3 +31,4 @@ Contents
    video-intro-screen
    customizing-the-main-menu
    advanced-dev
+   external-functions
