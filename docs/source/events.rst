@@ -42,6 +42,20 @@ Full event function list:
 .. code:: d
 
     // Global
+    ubyte[] scriptBundleWrite(ubyte[] buffer) { return buffer; }
+    ubyte[] scriptBundleRead(ubyte[] buffer) { return buffer; }
+
+    void loadedExternalApplicationState() {} // Ex. SDL has been initialized, do whatever the fuck you want with this
+    void loadedSettings(GameSettings settings) {}
+    void fontsLoaded(Application app) {}
+    void standardEffectsLoaded() {}
+
+    void loadingAllResources(Resource[string] resources) {}
+    void loadingResource(string key, Resource resource) {}
+    void loadedResource(string key, Resource resource) {}
+    void loadedAllResources() {}
+    void engineReady(Application app, Window[] windows) {}
+
     void preFrameLoop(Window[] windows) {}
     void preRenderFrameLoop(Window[] windows) {}
     void postRenderFrameLoop(Window[] windows) {}
@@ -111,8 +125,11 @@ Full event function list:
     void endGameView() {}
 
     // Settings View
+    void renderSettingsViewStart() {}
     void renderSettingsDropDown(DropDown dropdown) {}
     void renderSettingsCheckBox(CheckBox checkbox) {}
+    void renderSettingsButton(Button button) {}
+    void renderSettingsViewEnd() {}
 
     // Main Menu View
     void renderMainMenuView(Window window, Component titleLabel, Component playLabel, Component loadLabel, Component historyLabel, Component settingsLabel, Component galleryLabel, Component exitLabel) {}
@@ -124,6 +141,7 @@ Full event function list:
     void renderLoadGameViewPrevLabel(Label label) {}
     void renderLoadGameViewNextLabel(Label label) {}
     void renderLoadGameViewLoadEntry(SaveFile saveFile, RawImage image, Label saveLabel) {}
+
 
 Production Example
 ==================
