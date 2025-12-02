@@ -293,7 +293,10 @@ Below is a list of all external types, functions etc. that interacts with or is 
         void clean();
     }
 
-If you need something else you can import these modules:
+If you require direct access to SDL functions beyond DVN’s EXT_ layer
+(for example: advanced texture operations, surface manipulation, raw
+window handles, custom rendering pipelines, etc.), you may import the
+underlying Derelict SDL2 modules directly:
 
 .. code:: d
   
@@ -302,3 +305,5 @@ If you need something else you can import these modules:
     import derelict.sdl2.mixer;
     import derelict.sdl2.ttf;
     import derelict.sdl2.net;
+
+Note that these are not part of DVN’s guaranteed-stable API surface.
